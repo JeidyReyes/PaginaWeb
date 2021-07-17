@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas de Desarrollo de Software </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel= "stylesheet" href="normalize.css"> 
+<link rel= "stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+    <header class= "site-header"> 
+        <div class="contenedor  contenido-header">
+        <div class= "barra">
+          <a href= "/">
+         <img src= "imagenes/Logo.jpg" alt ="imagen logo" > 
+        </a>
+<nav class= "navegacion">  
+       <a  href = "ventajas.html" > Ventajas </a>
+       <a href = "desventajas.html" > Desventajas </a>
+       <a href = "similitudes.html" > Similitudes </a>
+       <a  href = "Contacto.html" > Contacto </a>
+      </nav>   
+        </div>
+        </div> <!--contenedor-->
+        </header>
+  
+
+<img src="imagenes/Node Js.jpg" width="1500" alt="Imagen Logo Node Js">
+  <main class="contenedor seccion contenido-centrado"> 
+   <h2>NODE JS</h2>
+<p>Es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidorbasandose en el lenguaje 
+    de programación javascript, asincrono, con E/S de datos en arquitectura orientada a eventos y basado en el motor V8 de Google.</p>
+<p>Fue creado con el enfoque de ser útil en la creación de programasde red altamente escalables, como por ejemplo servidores web.</p>
+<h2>Autor</h2>
+<p>Fue creada por Ryan Dahl en 2009 y su evolución está apadrinada por la empresa Joyent, que además tiene contratado a Dahl en plantilla.</p>
+<h2>Ejecución</h2>
+<p>No se ejecuta en un navegador, sino en el servidor. <br></p>
+<p>Node js implementa algunas especificaciones de CommonsJS. Node JS incluye un entorno REPL para depuración interactiva </p>
+<h2>¿Para que sirve?</h2>
+<p>Utiliza un modelo de entrada y salida sin bloqueo controñado por eventos 
+    que lo hace ligero y eficiente. Puede referirse a cualquier operación, desde leer o escribir archivos de cualquier tipo, hasta hacer una solicitud HTTP.</p>
+<p>La idea principal de Node.js es usar el modelo de entrada y salida sin bloqueo y controlado por eventos para seguir siendo liviano y eficiente frente a las aplicaciones
+    en tiempo real de uso de datos que se ejecutan en los dispositivos.</p>
+<p>Es una plataforma que no dominará el mundo del desarrollo web pero si que satisface las necesidades de una gran mayoría de programadores.</p>
+<h2>Finalidad</h2>
+<p>La finalidad de Nodel.js no tiene su objetivo en operaciones intensivas del procesador, de hecho, usarlo para programación
+    de más peso, eliminará casi todas sus ventajas.</p>
+<p>Donde Node.js realmente brilla es en la creación de aplicaciones de red rápidas, ya que es capaz de manejar una gran cantidad de conexiones
+    simultaneas, con un alto nivel de rendimiento, lo que equivale a una alta escalabilidad.</p>
+<h2>Función</h2>
+<p>El funcionamiento interno del entorno de ejecución para JavaScript, Node.js, es bastante interesante.
+     En comparación con las técnicas tradicionales de servicio web donde cada conexión (que crea una solicitud) genera un nuevo subproceso, ocupando la RAM del sistema
+      y regularmente maximizando la cantidad de RAM disponible, Node.js opera en un solo subproceso, utilizando el modelo entrada y entrada sin bloqueo de la salida, 
+    lo que le permite soportar decenas de miles de conexiones al mismo tiempo mantenidas en el bucle de eventos.</p>
+    <p>El nodo está completamente controlado por eventos. Resumiendo podemos decir que el servidor consta de un subproceso que procesa un evento tras otro. </p>
+    <p>Cuando hay una nueva solicitud se genera un tipo de evento. El servidor empieza a procesarlo y, cuando hay una operación de bloqueo 
+        de entrada y salida, no espera hasta que se complete y en su lugar crea una función de devolución de llamada. 
+        El servidor comienza en el acto a procesar otro evento (tal vez otra solicitud) y cuando finaliza la operación de entada
+         y salida, continuará trabajando en la solicitud ejecutando la devolución de llamada tan pronto como tenga tiempo. </p>
+    <p>Por lo tanto, el servidor nunca necesita crear más subprocesos o cambiar entre subprocesos, lo que significa que tiene muy poca sobrecarga. </p>
+    <h2>Codificación</h2>
+    <p>Hay que mencionar que en el nivel más bajo de codificación (código C++), encontramos varios subprocesos en Node.js: hay un grupo de eventos de entrada y salida cuyo trabajo es recibir las interrupciones de 
+        los propios eventos de entrada y salida y poner los eventos correspondientes en la cola para ser procesados por el hilo principal evitando así la posible interrupción del mismo.</p>
+</main>
+   <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">               
+                <a  href = "ventajas.html" > Ventajas </a>
+                <a href = "desventajas.html" > Desventajas </a>
+                <a href = "similitudes.html" > Similitudes </a>
+                <a  href = "Contacto.html" > Contacto </a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>
